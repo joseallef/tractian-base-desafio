@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import { BoxContent, CardOptions, WrapperText, WrapperVideo } from "./styles";
 import { Grid } from "../../../layout/Grid";

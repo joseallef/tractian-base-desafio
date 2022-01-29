@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React from "react";
 import Box from "../src/components/Box";
 import Menu from "../src/components/commons/Menu";
 import SEO from "../src/components/commons/SEO";

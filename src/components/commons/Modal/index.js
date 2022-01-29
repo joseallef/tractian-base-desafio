@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useContext } from "react";
 import styled, { css, createGlobalStyle } from "styled-components";
 import { PageContext } from "../../Hooks";

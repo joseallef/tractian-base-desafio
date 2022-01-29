@@ -1,9 +1,9 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import {
   BoxContent,
   CardOptions,
   WrapperText,
-  WrapperVideo,
   CardOptionsMaterial,
   CardOptionsMaterialLeft,
 } from "../Solutions/styles";
