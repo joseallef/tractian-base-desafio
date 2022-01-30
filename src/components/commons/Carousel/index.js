@@ -63,16 +63,16 @@ const imgsClient = [
 ];
 
 export function Carousel() {
-  const [windowWidthSlider] = useState(100);
+  const [windowWidthSlider, setWindowWidthSlider] = useState(100);
 
-  // setTimeout(() => {
-  //   if (windowWidthSlider < -700) {
-  //     console.log(windowWidthSlider)
-  //     setWindowWidthSlider((windowWidthSlider - windowWidthSlider) + 100)
-  //   } else {
-  //     setWindowWidthSlider(windowWidthSlider - 2)
-  //   }
-  // }, 20);
+  setTimeout(() => {
+    if (windowWidthSlider < -700) {
+      console.log(windowWidthSlider);
+      setWindowWidthSlider(windowWidthSlider - windowWidthSlider + 100);
+    } else {
+      setWindowWidthSlider(windowWidthSlider - 2);
+    }
+  }, 20);
 
   return (
     <WrapperContainer>

@@ -11,7 +11,6 @@ export default function Home() {
     <Box>
       <SEO headTitle="Home" />
       <Menu />
-
       <Header />
       <Carousel />
       <SessionDesc />

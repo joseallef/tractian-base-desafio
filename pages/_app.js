@@ -13,6 +13,7 @@ function MyApp({ Component, pageProps }) {
         <title>
           TRACTIAN | Monitoramento online de ativos e gestão da manutenção
         </title>
+        <link rel="icon" href="https://tractian.com/tractian-favicon-ia.png" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link
