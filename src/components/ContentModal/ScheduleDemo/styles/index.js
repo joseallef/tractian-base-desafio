@@ -72,6 +72,9 @@ const Content = styled.section`
         line-height: 2.5rem;
       }
     `,
+    lg: css`
+      display: flex;
+    `,
     xl: css`
       max-width: 900px;
       padding: 50px 0 40px 0;
@@ -87,9 +90,10 @@ const Input = styled.input`
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 17px;
-  border: 0.5px solid #eee;
+  border: 0.5px solid #ddd;
   font-size: 14px;
   margin-bottom: 0;
+  background: #fff;
 
   &:focus {
     outline: none;
@@ -149,10 +153,54 @@ const ButtonSend = styled.div`
 const WrapperImg = styled.div`
   display: flex;
   margin-top: 45px;
-
   img {
     width: 100%;
   }
+
+  ${breakpointsMedia({
+    lg: css`
+      margin-top: 0px;
+      img {
+        width: 85%;
+      }
+    `,
+  })}
+`;
+
+const ImageMobile = styled.div`
+  display: flex;
+  ${breakpointsMedia({
+    lg: css`
+      display: none;
+    `,
+  })}
+`;
+
+const ImageDesc = styled.div`
+  display: none;
+  ${breakpointsMedia({
+    lg: css`
+      display: block;
+    `,
+  })}
+`;
+
+const WrapperForm = styled.div`
+  margin: 46px 0;
+
+  ${breakpointsMedia({
+    lg: css`
+      display: block;
+      width: 100%;
+
+      h2 {
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+        font-weight: 600;
+        font-size: inherit;
+      }
+    `,
+  })}
 `;
 
 export {
@@ -163,4 +211,7 @@ export {
   Input,
   WrapperLabel,
   ButtonSend,
+  ImageMobile,
+  ImageDesc,
+  WrapperForm,
 };
